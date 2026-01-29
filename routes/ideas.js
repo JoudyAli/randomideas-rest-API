@@ -52,7 +52,7 @@ router.put('/:id', async (req, res) => {
           tag: req.body.tag,
         },
       },
-      { new: true },
+      { new: true }
     );
     res.json({ success: true, data: updatedIdea });
   } catch (error) {
